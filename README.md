@@ -29,8 +29,7 @@ Para todas las rutas, debes establecer el encabezado `Content-Type` como `text/p
 proyecto/
 │
 ├── src/
-│   ├── server.js     # Lógica para crear el servidor
-│   └── router.js     # Lógica para manejar las rutas
+│   └── server.js     # Lógica para crear el servidor
 │
 ├── tests/
 │   └── server.test.js # Pruebas automatizadas
@@ -56,7 +55,6 @@ proyecto/
    ```
 3. Implementa la lógica del servidor según los requisitos en los archivos correspondientes:
    - `src/server.js`
-   - `src/router.js`
    - `index.js`
 4. Inicia el servidor para probarlo manualmente:
    ```
