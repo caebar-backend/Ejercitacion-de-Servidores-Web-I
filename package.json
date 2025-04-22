@@ -6,13 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest",
-    "dev": "nodemon index.js"
-  },
-  "dependencies": {},
-  "devDependencies": {
-    "jest": "^29.7.0",
-    "nodemon": "^3.0.1",
-    "supertest": "^6.3.3"
+    "dev": "node --watch index.js"
   },
   "keywords": [
     "node",
@@ -21,5 +15,9 @@
     "educational"
   ],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  }
 }

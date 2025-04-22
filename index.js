@@ -13,7 +13,7 @@ const server = createServer();
 // Iniciar el servidor
 server.listen(PORT, () => {
   console.log(`Servidor escuchando en http://localhost:${PORT}`);
-  console.log('Presiona Ctrl+C para detener el servidor');
+  console.log('Presioná Ctrl+C para detener el servidor');
 });
 
 // Exportar el servidor para pruebas
