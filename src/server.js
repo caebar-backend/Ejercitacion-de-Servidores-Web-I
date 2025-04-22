@@ -2,7 +2,6 @@
  * Módulo que crea y configura el servidor HTTP
  */
 const http = require('http');
-const router = require('./router');
 
 /**
  * Crea un servidor HTTP que utiliza la función router para manejar las solicitudes
@@ -10,7 +9,7 @@ const router = require('./router');
  */
 function createServer() {
   const server = http.createServer((req, res) => {
-    router(req, res);
+    /* Aquí la lógica del enrutador */
   });
   
   return server;
