@@ -1,0 +1,25 @@
+{
+  "name": "node-http-server-assignment",
+  "version": "1.0.0",
+  "description": "Ejercicio de HTTP server con Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3"
+  },
+  "keywords": [
+    "node",
+    "http",
+    "server",
+    "educational"
+  ],
+  "author": "",
+  "license": "ISC"
+}
