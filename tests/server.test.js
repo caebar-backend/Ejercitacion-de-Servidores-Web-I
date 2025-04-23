@@ -20,8 +20,8 @@ describe('Pruebas del servidor HTTP', () => {
   });
 
   // Prueba para la ruta /nosotros
-  test('GET /nosotras debería devolver "Bienvenid@s a saber + de nosotros :)"', async () => {
-    const response = await request(server).get('/nosotras');
+  test('GET /nosotros debería devolver "Bienvenid@s a saber + de nosotros :)"', async () => {
+    const response = await request(server).get('/nosotros');
     expect(response.status).toBe(200);
     expect(response.text).toBe('Bienvenid@s a saber + de nosotros :)');
     expect(response.headers['content-type']).toMatch(/text\/plain/);
