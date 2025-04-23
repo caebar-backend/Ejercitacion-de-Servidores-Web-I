@@ -19,29 +19,29 @@ describe('Pruebas del servidor HTTP', () => {
     expect(response.headers['content-type']).toMatch(/charset=utf-8/);
   });
 
-  // Prueba para la ruta /nosotras
-  test('GET /nosotras debería devolver "Bienvenid@s a saber + de nosotras :)"', async () => {
+  // Prueba para la ruta /nosotros
+  test('GET /nosotras debería devolver "Bienvenid@s a saber + de nosotros :)"', async () => {
     const response = await request(server).get('/nosotras');
     expect(response.status).toBe(200);
-    expect(response.text).toBe('Bienvenid@s a saber + de nosotras :)');
+    expect(response.text).toBe('Bienvenid@s a saber + de nosotros :)');
     expect(response.headers['content-type']).toMatch(/text\/plain/);
     expect(response.headers['content-type']).toMatch(/charset=utf-8/);
   });
 
   // Prueba para la ruta /cursos
-  test('GET /cursos debería devolver "Te interesan nuestros cursos. Ven a conocer la oferta!"', async () => {
+  test('GET /cursos debería devolver "Te interesan nuestros cursos. Vení a conocer la oferta!"', async () => {
     const response = await request(server).get('/cursos');
     expect(response.status).toBe(200);
-    expect(response.text).toBe('Te interesan nuestros cursos. Ven a conocer la oferta!');
+    expect(response.text).toBe('Te interesan nuestros cursos. Vení a conocer la oferta!');
     expect(response.headers['content-type']).toMatch(/text\/plain/);
     expect(response.headers['content-type']).toMatch(/charset=utf-8/);
   });
 
   // Prueba para la ruta /contacto
-  test('GET /contacto debería devolver "Si gustas contactarnos, hazlo a este Email: :)"', async () => {
+  test('GET /contacto debería devolver "Si querés contactarnos, hacelo a este Email: :)"', async () => {
     const response = await request(server).get('/contacto');
     expect(response.status).toBe(200);
-    expect(response.text).toBe('Si gustas contactarnos, hazlo a este Email: :)');
+    expect(response.text).toBe('Si querés contactarnos, hacelo a este Email: :)');
     expect(response.headers['content-type']).toMatch(/text\/plain/);
     expect(response.headers['content-type']).toMatch(/charset=utf-8/);
   });
